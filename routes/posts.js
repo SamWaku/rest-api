@@ -28,7 +28,7 @@ router.post('/', async (req,res)=>{
    }
 });
 
-//specif post
+//specific post
 router.get('/:postId', async (req,res) =>{
     try{
     const post = await Post.findById(req.params.postId);
